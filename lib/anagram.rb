@@ -2,7 +2,7 @@
 require 'pry'
 
 class Anagram
-    attr_accessor :word, :match
+    attr_accessor :word
 
     def initialize(word)
         @word = word
@@ -11,5 +11,5 @@ class Anagram
     def match(array)
         array.select {|w| w.split("").sort == self.word.split("").sort}
     end
-    
+
 end
